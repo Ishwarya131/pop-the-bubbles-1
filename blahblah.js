@@ -110,6 +110,7 @@ document.getElementById('Restart').onclick=function () {
   
     if (bubbleArray.every(checkradius)==true  || timeout==true){
       canvas.style.display="none";
+          bubbleArray=[]; // emptying array after game is over
       document.getElementById("final").style.display="block";
       document.getElementById("score").innerHTML="popped "+(score-1)+" bubbles";
     }
